@@ -1,0 +1,87 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: bootloader-uart-xmodem
+label: bootloader-uart-xmodem
+description: |
+  Standalone Bootloader using XMODEM-CRC over UART. The bootloader shows a menu, where an XMODEM transfer can be started by sending ASCII '1', or the application can be started by sending ASCII '2'. This is the recommended UART bootloader for the EmberZNet and Connect protocol stacks.
+category: Example|Bootloader
+filter:
+- name: Device Type
+  value:
+  - NCP
+- name: MCU
+  value:
+  - Bootloader
+- name: Project Difficulty
+  value:
+  - Advanced
+package: bootloader
+quality: production
+readme:
+- path: readme.md
+sdk:
+  vendor: silabs
+  id: simplicity_sdk
+  version: 2025.12.2
+toolchain_settings: [
+  ]
+component:
+- package: simplicity_sdk
+  vendor: silabs
+  id: EFR32MG22C224F512IM32
+- package: simplicity_sdk
+  vendor: silabs
+  id: bootloader_aes_sha_ecdsa
+- package: simplicity_sdk
+  vendor: silabs
+  id: bootloader_core
+- package: simplicity_sdk
+  vendor: silabs
+  id: bootloader_crc
+- package: simplicity_sdk
+  vendor: silabs
+  id: bootloader_debug
+- package: simplicity_sdk
+  vendor: silabs
+  id: bootloader_delay_driver
+- package: simplicity_sdk
+  vendor: silabs
+  id: bootloader_image_parser
+- package: simplicity_sdk
+  vendor: silabs
+  id: bootloader_serial_driver
+- package: simplicity_sdk
+  vendor: silabs
+  id: bootloader_token_management
+- package: simplicity_sdk
+  vendor: silabs
+  id: bootloader_uart_xmodem
+- package: simplicity_sdk
+  vendor: silabs
+  id: bootloader_xmodem_parser
+- package: simplicity_sdk
+  vendor: silabs
+  id: brd4183c
+template_contribution:
+- name: memory_ram_start
+  priority: 0
+  value: 536870912
+- name: memory_ram_size
+  priority: 0
+  value: 32768
+- name: memory_flash_start
+  priority: 0
+  value: 0
+- name: memory_flash_size
+  priority: 0
+  value: 81920
+configuration:
+- name: SL_VCOM_ENABLE
+  value: '1'
+ui_hints:
+  highlight:
+  - path: readme.md
+    focus: true
+post_build:
+- path: bootloader-uart-xmodem.slpb
+  profile: bootloader_series_2
+

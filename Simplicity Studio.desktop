@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Simplicity Studio
+Comment=Silicon Labs IDE
+Exec=/home/ty/SimplicityStudio/run.sh  # 请替换为你的实际安装路径下的启动文件
+Icon=/home/ty/SimplicityStudio/icon.png  # 请替换为实际图标路径（如果没有可留空）
+Terminal=false
+Categories=Development;IDE;

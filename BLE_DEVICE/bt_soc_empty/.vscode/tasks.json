@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "bt_soc_empty_silabs_debug:default_config_setup",
+            "type": "shell",
+            "command": "/home/ty/.silabs/slt/installs/conan/p/cmake1c02712053792/p/bin/cmake --preset project",
+            "options": {
+                "cwd": "/home/ty/SimplicityStudio/BLE_DEVICE/bt_soc_empty/cmake_gcc"
+            }
+        },
+        {
+            "label": "bt_soc_empty_silabs_debug:default_config_build",
+            "type": "shell",
+            "command": "/home/ty/.silabs/slt/installs/conan/p/cmake1c02712053792/p/bin/cmake --build --preset default_config",
+            "options": {
+                "cwd": "/home/ty/SimplicityStudio/BLE_DEVICE/bt_soc_empty/cmake_gcc"
+            }
+        },
+        {
+            "label": "bt_soc_empty_silabs_debug:default_config_flash",
+            "type": "shell",
+            "command": "/home/ty/.silabs/slt/installs/archive/commander/commander",
+            "args": [
+                "flash",
+                "/home/ty/SimplicityStudio/BLE_DEVICE/bt_soc_empty/cmake_gcc/build/base/bt_soc_empty.hex",
+                "--halt",
+                "--serialno",
+                "440350262",
+                "--device",
+                "EFR32MG22C224F512IM32"
+            ]
+        },
+        {
+            "label": "bt_soc_empty_silabs_debug:default_config_combined",
+            "dependsOrder": "sequence",
+            "presentation": {
+                "reveal": "never"
+            },
+            "dependsOn": [
+                "bt_soc_empty_silabs_debug:default_config_setup",
+                "bt_soc_empty_silabs_debug:default_config_build",
+                "bt_soc_empty_silabs_debug:default_config_flash"
+            ]
+        }
+    ]
+}

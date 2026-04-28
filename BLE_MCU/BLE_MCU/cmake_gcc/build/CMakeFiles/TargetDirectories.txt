@@ -1,0 +1,4 @@
+/home/ty/SimplicityStudio/BLE_MCU/BLE_MCU/cmake_gcc/build/CMakeFiles/slc.dir
+/home/ty/SimplicityStudio/BLE_MCU/BLE_MCU/cmake_gcc/build/CMakeFiles/BLE_MCU.dir
+/home/ty/SimplicityStudio/BLE_MCU/BLE_MCU/cmake_gcc/build/CMakeFiles/edit_cache.dir
+/home/ty/SimplicityStudio/BLE_MCU/BLE_MCU/cmake_gcc/build/CMakeFiles/rebuild_cache.dir

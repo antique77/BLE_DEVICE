@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ASCII"?>
+<device:XMLDevice xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:device="http://www.silabs.com/ss/hwconfig/document/device.ecore" name="pin_tool.EFR32MG22C224F512IM32" partId="mcu.arm.efr32.mg22.efr32mg22c224f512im32" contextId="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570">
+  <mode name="DefaultMode">
+    <property object="DefaultMode" propertyId="mode.diagramLocation" value="100, 100"/>
+    <property object="GPIO" propertyId="ABModule.selectedRequirement" value="gpio%T%SL_DEBUG%T%sl_debug_swo_config.h"/>
+    <property object="GPIO" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PA01" propertyId="pin.name" value="SWCLK"/>
+    <property object="PA02" propertyId="pin.name" value="SWDIO"/>
+    <property object="PA03" propertyId="pin.name" value="SWV"/>
+    <property object="PA05" propertyId="pin.name" value="UART_TX"/>
+    <property object="PA06" propertyId="pin.name" value="UART_RX"/>
+    <property object="PB00" propertyId="pin.name" value="I2C_SDA"/>
+    <property object="PB01" propertyId="pin.name" value="I2C_SCL"/>
+    <property object="PC00" propertyId="pin.name" value=""/>
+    <property object="PC01" propertyId="pin.name" value=""/>
+    <property object="PC02" propertyId="pin.name" value=""/>
+    <property object="PC03" propertyId="pin.name" value=""/>
+    <property object="PC05" propertyId="pin.name" value="BUZZER"/>
+    <property object="PORTIO" propertyId="portio.gpio.enable.swclk" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.gpio.enable.swdio" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.gpio.enable.swv" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.i2c0.enable.scl" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.i2c0.enable.sda" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.i2c0.location.scl" value="17"/>
+    <property object="PORTIO" propertyId="portio.i2c0.location.sda" value="16"/>
+    <property object="PORTIO" propertyId="portio.pti.location.dframe" value="33"/>
+    <property object="PORTIO" propertyId="portio.timer1.enable.cc0" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.timer1.location.cc0" value="37"/>
+    <property object="PORTIO" propertyId="portio.usart0.enable.rx" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.usart0.enable.tx" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.usart0.location.rx" value="6"/>
+    <property object="PORTIO" propertyId="portio.usart0.location.tx" value="5"/>
+    <property object="PTI" propertyId="ABModule.selectedRequirement" value="pti%T%SL_RAIL_UTIL_PTI%T%sl_rail_util_pti_config.h"/>
+    <property object="PTI" propertyId="ABPeripheral.included" value="true"/>
+  </mode>
+  <modeTransition>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.source" value="RESET"/>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.target" value="DefaultMode"/>
+  </modeTransition>
+</device:XMLDevice>

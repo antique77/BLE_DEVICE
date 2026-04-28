@@ -1,0 +1,13 @@
+#CRC Codes for initially generated config files -- do not modify!
+btl_core_cfg.h=1487387165
+btl_debug_cfg.h=1029056653
+btl_gpio_activation_cfg.h=-244057362
+btl_uart_driver_cfg.h=-452375924
+btl_xmodem_config.h=1164637858
+psa_crypto_config.h=508311426
+sl_core_config.h=-1854422791
+sl_fault_injection_hardening_cfg.h=797160938
+sl_mbedtls_device_config.h=-287029762
+sl_mbedtls_trustzone_config.h=-986216763
+sl_memory_manager_config.h=-21294862
+sl_memory_manager_region_config.h=-793745704

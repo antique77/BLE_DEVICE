@@ -1,0 +1,37 @@
+CompileFlags:
+  # 编译数据库路径（CMake生成的compile_commands.json）
+  CompilationDatabase: cmake_gcc/build
+
+  # 补充编译标志（当compile_commands.json不够时的fallback）
+  Add:
+    - "--target=arm-none-eabi"
+    - "-mcpu=cortex-m33"
+    - "-mthumb"
+    - "-mfpu=fpv5-sp-d16"
+    - "-mfloat-abi=hard"
+
+Diagnostics:
+  ClangTidy:
+    Remove:
+      - "*"
+  UnusedArguments: Keep
+  Suppress:
+    - "argument unused during compilation"
+    - "unknown warning option"
+    - "linker input unused"
+    - "unrecognized gcc command-line option"
+    - "'-mcmse' is not recognized"
+    - "unknown type name '__asm'"
+    - "unknown attribute 'used' ignored"
+    - "keyword is hidden by macro definition"
+
+Index:
+  Background: Build
+
+Completion:
+  Style: detailed
+
+InlayHints:
+  Enabled: Yes
+  ParameterNames: Yes
+  DeducedTypes: Yes

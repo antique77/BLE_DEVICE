@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<model:MDescriptors xmlns:model="http://www.silabs.com/ss/Studio.ecore">
+  <descriptors name="$registry.cache.settings">
+    <properties key="prevKnownDetectorClasses" value="com.silabs.ss.platform.internal.api.sdk.core.SDKDetector com.silabs.ss.platform.internal.api.sdk.core.SltSdkDetector"/>
+    <properties key="slt_sdks" value="[/home/ty/.silabs/slt/installs/conan/p/aiml8394b5c647a14/p, /home/ty/.silabs/slt/installs/conan/p/mattef07831835e490/p, /home/ty/.silabs/slt/installs/conan/p/sidew8e9f2a2b7254f/p, /home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p, /home/ty/.silabs/slt/installs/conan/p/wisecd4a93bcc8f553/p]"/>
+  </descriptors>
+</model:MDescriptors>

@@ -1,0 +1,8 @@
+{
+    "folders": [
+        {
+            "path": "../BLE_DEVICE/ble_per_uart_ncp"
+        }
+    ],
+    "siWorkspaceRoot": "/home/ty/SimplicityStudio/v6_workspace"
+}

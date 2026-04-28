@@ -1,0 +1,192 @@
+/*
+ * ============================================================
+ *  单片机端 I2C 协议层补丁 - 与 Linux 内核驱动配套
+ *  文件: bsp/bsp_i2c/bsp_i2c.h 和 bsp/bsp_i2c/bsp_i2c.c
+ * ============================================================
+ *
+ *  本文件包含对原始 bsp_i2c.h / bsp_i2c.c 的所有修改,
+ *  添加寄存器映射协议层, 使 EFR32 能响应 Linux 驱动的读写请求.
+ *
+ *  修改方式: 对照下方 diff 手动应用, 或按说明逐行修改.
+ *  总改动量: ~80 行新增代码, ~10 行修改.
+ */
+
+/* ====================================================================
+ *  Part 1: bsp_i2c.h 的修改
+ *  在 #define I2C_SLAVE_ADDRESS 0xA6 之后追加以下定义:
+ * ==================================================================== */
+
+#if 0  /* ===== 以下是需添加的内容 ===== */
+
+/* ---- I2C 协议层寄存器地址 (与 Linux 端 efr32_i2c.c 保持一致) ---- */
+#define REG_DEVICE_ID     0x00    /* [R] 设备ID = 0xE3 */
+#define REG_VERSION       0x01    /* [R] 固件版本 V1.0 = 0x10 */
+#define REG_ECHO          0x02    /* [R/W] 回显寄存器 (测试用) */
+#define REG_COUNTER       0x03    /* [R] 通信计数器 */
+#define REG_TOTAL_COUNT   4       /* 寄存器总数 */
+
+/* ---- 固定值 ---- */
+#define DEVICE_ID_VAL     0xE3
+#define FW_VER_VAL        0x10    /* V1.0 */
+
+/* ---- 协议层函数声明 ---- */
+void i2c_protocol_init(void);      /* 初始化寄存器默认值 */
+
+#endif   /* ===== 添加结束 ===== */
+
+
+/* ====================================================================
+ *  Part 2: bsp_i2c.c 的修改 (共6处)
+ * ==================================================================== */
+
+/*
+ * 【修改位置1】文件顶部, 第1行 #include 之后, 追加头文件:
+ */
+#if 0
+#include <string.h>    /* 需要 memcpy (如果尚未包含) */
+#endif
+
+/*
+ * 【修改位置2】在第18行 (i2c_write_request 定义) 之后,
+ *             追加协议层静态变量:
+ */
+#if 0
+static volatile uint8_t  current_reg  = 0xFF;    /* 当前选中寄存器地址 */
+static volatile uint8_t  reg_echo_val = 0x00;    /* 回显寄存器值 */
+static volatile uint16_t comm_counter = 0;        /* 通信次数计数器 */
+static volatile uint8_t  device_regs[REG_TOTAL_COUNT];  /* 寄存器镜像数组 */
+#endif
+
+/*
+ * 【修改位置3】在 NVIC_Config() 函数之前 (约第21行),
+ *             新增协议初始化函数:
+ */
+#if 0
+void i2c_protocol_init(void)
+{
+    device_regs[REG_DEVICE_ID] = DEVICE_ID_VAL;
+    device_regs[REG_VERSION]   = FW_VER_VAL;
+    device_regs[REG_ECHO]      = 0x00;
+    device_regs[REG_COUNTER]   = 0x00;
+    reg_echo_val = 0x00;
+    comm_counter = 0;
+    printf("[I2C] Protocol init OK\r\n");
+}
+#endif
+
+/*
+ * 【修改位置4】替换 handle_receive_data() 函数中的第143-147行:
+ *
+ *  原代码:
+ *      // 可选：处理特定协议，如第一个字节为寄存器地址等
+ *      if (i2c_rx_index == 1) {
+ *          // 第一个字节可能是寄存器地址
+ *          // 可以在这里设置准备发送的数据
+ *      }
+ *
+ *  替换为:
+ */
+#if 0
+    /* ★ 协议解析: 第一个字节=目标寄存器地址 */
+    if (i2c_rx_index == 1) {
+        current_reg = i2c_rx_buffer[0];          /* 保存寄存器地址 */
+        protocol_prepare_tx(current_reg);         /* 预填充发送缓冲区 */
+    } else if (i2c_rx_index > 1) {
+        protocol_handle_write(current_reg, i2c_rx_buffer[i2c_rx_index - 1]);
+        /* 自动递增地址(支持连续写) */
+        if (current_reg < REG_TOTAL_COUNT - 1) current_reg++;
+    }
+#endif
+
+/*
+ * 【修改位置5】替换 handle_stop_condition() 中的第175-178行:
+ *
+ *  原代码:
+ *      // 可以设置标志、触发事件或调用回调函数
+ *      // 例如：i2c_data_received_callback(i2c_rx_buffer, i2c_rx_index);
+ *      i2c_rx_index = 0;
+ *
+ *  替换为:
+ */
+#if 0
+    if (i2c_rx_index > 0) {
+        comm_counter++;                                   /* 计数+1 */
+        device_regs[REG_COUNTER] = (uint8_t)(comm_counter & 0xFF);
+        printf("[I2C] RX %d bytes, reg=0x%02X, cnt=%u\r\n",
+               (int)i2c_rx_index, (int)i2c_rx_buffer[0],
+               (unsigned int)comm_counter);
+        i2c_rx_index = 0;
+    }
+#endif
+
+/*
+ * 【修改位置6】在文件末尾 (第209行之后), 追加两个新函数:
+ */
+#if 0
+/**
+ * 根据寄存器地址预填充发送缓冲区
+ * 当主机发起读操作时, 此函数决定从机返回什么数据
+ */
+static void protocol_prepare_tx(uint8_t reg)
+{
+    uint8_t tx_buf[I2C_TX_BUFFER_SIZE];
+    int len = 0;
+
+    /* 同步动态寄存器到镜像数组 */
+    device_regs[REG_ECHO]    = reg_echo_val;
+    device_regs[REG_COUNTER] = (uint8_t)(comm_counter & 0xFF);
+
+    /* 从当前地址开始, 连续填充 TX 缓冲区 */
+    for (int i = 0; i < REG_TOTAL_COUNT && len < I2C_TX_BUFFER_SIZE; i++) {
+        if (reg + i < REG_TOTAL_COUNT) {
+            tx_buf[len++] = device_regs[reg + i];
+        } else {
+            tx_buf[len++] = 0xFF;  /* 超范围返回0xFF */
+        }
+    }
+
+    i2c_prepare_tx_data(tx_buf, (uint16_t)len);
+}
+
+/**
+ * 处理主机写入操作
+ */
+static void protocol_handle_write(uint8_t reg, uint8_t val)
+{
+    switch (reg) {
+    case REG_DEVICE_ID:
+    case REG_VERSION:
+    case REG_COUNTER:
+        break;  /* 只读寄存器, 忽略写入 */
+
+    case REG_ECHO:
+        reg_echo_val = val;
+        device_regs[REG_ECHO] = val;
+        printf("[I2C] ECHO <- 0x%02X\r\n", val);
+        break;
+
+    default:
+        break;  /* 未知寄存器, 忽略 */
+    }
+}
+#endif
+
+
+/* ====================================================================
+ *  Part 3: app.c 的修改 (1处)
+ * ==================================================================== */
+
+/*
+ *  在 app_init() 中, 将:
+ *      I2C_Config();
+ *
+ *  改为 (在其前面加一行):
+ */
+#if 0
+    i2c_protocol_init();    /* ★ 初始化I2C协议层 (必须在 I2C_Config 之前!) */
+    I2C_Config();
+#endif
+
+/* ====================================================================
+ *  修改完成! 重新编译烧录即可.
+ * ==================================================================== */

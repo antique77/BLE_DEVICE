@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="ASCII"?>
+<model:MDescriptors xmlns:model="http://www.silabs.com/ss/Studio.ecore">
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Silicon Labs AI/ML SDK" description="&lt;pre>AI/ML SDK for Simplicity SDK&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/aiml8394b5c647a14/p/aiml.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="2.2.1._-430281873"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.partCompatibility" value=".*si917.* .*efr32.g2[468].*"/>
+    <properties key="sdk.subLabel" value="Silicon\ Labs\ AI/ML\ SDK\ 2.2.1"/>
+    <properties key="core.boardCompatibility" value=".*brd2601.* .*brd2605.* .*brd2608.* .*brd4186.* .*brd4187.*"/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/aiml8394b5c647a14/p/examples/aiml_templates.xml"/>
+    <properties key="sdk.docsFile" value="/home/ty/.silabs/slt/installs/conan/p/aiml8394b5c647a14/p/aiml_docs.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/aiml8394b5c647a14/p/examples/aiml_demos.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="false"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.aiml"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Bluetooth LE SDK" description="&lt;pre>Bluetooth LE Software Development Kit&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_le_app/bluetooth_le_app.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="11.0.1._1839170744"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_le_app/bluetooth_le_app_templates.xml"/>
+    <properties key="sdk.docsFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_le_app/documentation/slBluetooth_docContent.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_le_app/bluetooth_le_app_demos.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.bluetooth_le_app"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Bluetooth Mesh SDK" description="&lt;pre>Bluetooth Mesh Software Development Kit&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_mesh_app/bluetooth_mesh_app.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="10.1.1._-2119962120"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_mesh_app/bluetooth_mesh_templates.xml"/>
+    <properties key="sdk.docsFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_mesh_app/documentation/slBtMesh_docContent.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_mesh_app/bluetooth_mesh_demos.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.bluetooth_mesh_app"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Connect SDK Sample Applications" description="&lt;pre>Connect SDK Applications&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/connect_sdk_sample_app/connect_sdk_sample_app.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="1.0.1._166502072"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/connect_sdk_sample_app/connect_sdk_sample_app_templates.xml"/>
+    <properties key="sdk.docsFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/connect_sdk_sample_app/documentation/slConnect_docContent.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.eval.connect_sdk_sample_app"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Rail SDK Sample Applications" description="&lt;pre>Rail SDK Sample Applications&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/rail_sdk_sample_app/rail_sdk_sample_app.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="1.0.1._-39997258"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/rail_sdk_sample_app/rail_sdk_sample_app_templates.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/rail_sdk_sample_app/rail_sdk_sample_app_demos.xml"/>
+    <properties key="sdk.docsFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/rail_sdk_sample_app/documentation/slrail_docContent.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.eval.rail_sdk_sample_app"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="wisun_sdk_app Evaluation" description="&lt;pre>WiSun SDK Smaple applications&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_sdk_sample_app/wisun_sdk_sample_app.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="1.0.1._1528805240"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_sdk_sample_app/wisun_sdk_sample_app_templates.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_sdk_sample_app/wisun_sdk_sample_app_demos.xml"/>
+    <properties key="sdk.docsFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_sdk_sample_app/documentation/slWi-SUN_docContent.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.eval.wisun_sdk_sample_app"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Silicon Labs Matter" description="&lt;pre>Matter extension for Simplicity SDK Suite&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/mattef07831835e490/p/matter.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="2.8.1._1229489273"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.subLabel" value="Silicon\ Labs\ Matter\ 2.8.1-1.5"/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/mattef07831835e490/p/matter_templates.xml"/>
+    <properties key="sdk.docsFile" value="/home/ty/.silabs/slt/installs/conan/p/mattef07831835e490/p/matter_docs.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/mattef07831835e490/p/matter_demos.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="false"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.matter"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Micrium OS Kernel" description="&lt;pre>SL-MOS-KRNX-000000-P-P1&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/micriumos/platform/micrium_os/micrium-krnx.properties"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="6.0.0._1187004852"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.partCompatibility" value="mcu.arm.efm32.pg2[1-9].* mcu.arm.efr32.[pbfmsz]g2[1-9].*"/>
+    <properties key="installedUnit" value="krnx"/>
+    <properties key="sdk.docsFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/micriumos/platform/micrium_os/micrium-krnx-docs.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.micrium"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Multiprotocol" description="&lt;pre>Multiprotocol Sample Applications&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/multiprotocol_app/multiprotocol_app.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="1.0.1.0_-2057548928"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.partCompatibility" value=".*host.* .*rm21.* .*efr32m[gr]2.* .*mgm2.* .*simg301.*"/>
+    <properties key="sdk.subLabel" value="Multiprotocol\ 1.0.1.0"/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/multiprotocol_app/multiprotocol_production_templates.xml /home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/multiprotocol_app/multiprotocol_experimental_templates.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/multiprotocol_app/multiprotocol_production_demos.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.multiprotocol_app"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Platform" description="&lt;pre>Platform&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/platform_common_apps/app/common/app_common.properties"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="5.2.0.0_1173809551"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.subLabel" value="Platform\ 5.2.0.0"/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/platform_common_apps/app/common/platform_evaluation_templates.xml /home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/platform_common_apps/app/common/platform_experimental_templates.xml /home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/platform_common_apps/app/common/builtin_templates.xml /home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/platform_common_apps/app/common/platform_production_templates.xml /home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/platform_common_apps/app/common/platform_internal_templates.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/platform_common_apps/app/common/platform_production_demos.xml /home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/platform_common_apps/app/common/platform_evaluation_demos.xml /home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/platform_common_apps/app/common/platform_experimental_demos.xml /home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/platform_common_apps/app/common/platform_deprecated_demos.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.platform"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Sidewalk" description="&lt;pre>Sidewalk Software Development Kit&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/sidew8e9f2a2b7254f/p/sidewalk.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="2.8.1._1155239147"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.subLabel" value="Sidewalk\ 2.8.1"/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/sidew8e9f2a2b7254f/p/sidewalk_production_templates.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/sidew8e9f2a2b7254f/p/sidewalk_demos.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="false"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.sidewalk"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="OpenThread SDK" description="&lt;pre>OpenThread stack support for EFR32 devices&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/openthread_app/openthread_app.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="3.0.1.0_-1311193672"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.partCompatibility" value=".*efr32m[gr]2.* .*mgm2.* .*simg301.*"/>
+    <properties key="sdk.subLabel" value="OpenThread\ 3.0.1.0\ (GitHub-61e43cffb)"/>
+    <properties key="core.boardCompatibility" value=".*"/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/openthread_app/openthread_production_templates.xml"/>
+    <properties key="useGCCUserObjs" value="openthread"/>
+    <properties key="sdk.docsFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/openthread_app/documentation/slOpenThread_docContent.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/openthread_app/openthread_production_demos.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.stack.openthread_app"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Zigbee components" description="&lt;pre>Zigbee components&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/zigbee/zigbee.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="9.0.1.0_998445368"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="zcl.zigbeeTemplateJsonFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/zigbee/app/framework/gen-template/gen-templates.json"/>
+    <properties key="zcl.zigbeeZclJsonFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/zigbee/app/zcl/zcl-zap.json"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.stack.zigbee"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="EmberZNet SDK" description="&lt;pre>Silicon Labs EmberZNet SDK&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/zigbee_app/zigbee_app.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="9.0.1.0_-210160520"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.partCompatibility" value=".*host.* .*rm21.* .*efr32m[gr]2.* .*mgm2.* .*simg301.*"/>
+    <properties key="sdk.subLabel" value="EmberZNet\ 9.0.1.0"/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/zigbee_app/zigbee_experimental_templates.xml /home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/zigbee_app/zigbee_production_templates.xml"/>
+    <properties key="sdk.docsFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/zigbee_app/docs/slEmberZNet_docContent.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/zigbee_app/zigbee_production_demos.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.stack.zigbee_app"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="wisun_soc_cli_app" description="&lt;pre>Wi-SUN CLI Application&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_cli_app/wisun_cli_app.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="2.11.0._-2116433996"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_cli_app/wisun_cli_app_templates.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_cli_app/wisun_cli_app_demos.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.wisun_cli_app"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="wisun_ddp_app" description="&lt;pre>Wi-SUN DDP Application&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_ddp_app/wisun_ddp_app.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="2.11.0._214480468"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_ddp_app/wisun_ddp_app_templates.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_ddp_app/wisun_ddp_app_demos.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.wisun_ddp_app"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="wisun_ncp_app" description="&lt;pre>Wi-SUN NCP Application&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_ncp_app/wisun_ncp_app.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="2.11.0._-1853192630"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_ncp_app/wisun_ncp_app_templates.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_ncp_app/wisun_ncp_app_demos.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.wisun_ncp_app"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="wisun_rcp_app" description="&lt;pre>Wi-SUN RCP Application&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_rcp_app/wisun_rcp_app.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="2.11.0._821716338"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_rcp_app/wisun_rcp_app_templates.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_rcp_app/wisun_rcp_app_demos.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.wisun_rcp_app"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Z-Wave CC Configurator" description="&lt;pre>Z-Wave CC Configurator for Z-Wave SDK&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/zwave_cc_configurator/z-wave_cc_configurator.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="1.0.0.0_1813477861"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.zwave_cc_configurator"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Z-Wave Sample App" description="&lt;pre>Z-Wave Sample Apps for EFR32 devices&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/zwave_sample_app/zwave_sample_app.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="1.0.1.0_1561904952"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.subLabel" value="Z-Wave\ SDK\ 8.0.1.0"/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/zwave_sample_app/z-wave_application_templates.xml"/>
+    <properties key="sdk.docsFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/zwave_sample_app/docs_public/docs.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/zwave_sample_app/z-wave_application_demos.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.zwave_sample_app"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Connect Stack" description="&lt;pre>Connect Stack&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/connect_stack/connect.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="4.2.1._1534946073"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.subLabel" value="Connect"/>
+    <properties key="sdk.adapterPacks" value=""/>
+    <properties key="sdk.templatesFile" value=""/>
+    <properties key="sdk.docsFile" value=""/>
+    <properties key="sdk.demosFile" value=""/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.stack.connect"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Connect SDK" description="&lt;pre>Connect Software Development Kit&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/connect_sdk/connect_sdk.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="4.2.1._776747364"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.subLabel" value="Connect SDK"/>
+    <properties key="sdk.adapterPacks" value=""/>
+    <properties key="sdk.templatesFile" value=""/>
+    <properties key="sdk.docsFile" value=""/>
+    <properties key="sdk.demosFile" value=""/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.stack.connect"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="RAIL SDK" description="&lt;pre>RAIL Software Development Kit&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/rail_sdk/rail_sdk.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="3.0.1._58433240"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.adapterPacks" value=""/>
+    <properties key="sdk.templatesFile" value=""/>
+    <properties key="sdk.demosFile" value=""/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.stack.rail"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Wi-SUN" description="&lt;pre>Silicon Labs Wi-SUN SDK&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_sdk/wisun_sdk.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="2.11.0._-933474044"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.adapterPacks" value=""/>
+    <properties key="sdk.templatesFile" value=""/>
+    <properties key="sdk.demosFile" value=""/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.stack.wisun"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="Wi-SUN Config Generator" description="&lt;pre>Wi-SUN Configurator tool for generating Wi-SUN stack configurations&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_config_generator/wisun_config_generator.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="1.0.0._-2099845608"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="sdk.adapterPacks" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_config_generator/apack.info"/>
+    <properties key="hkconfAdkModels" value="/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/wisun_config_generator"/>
+    <properties key="sdk.templatesFile" value=""/>
+    <properties key="sdk.demosFile" value=""/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="true"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.tool.wisun_config_generator"/>
+  </descriptors>
+  <descriptors name="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570" label="WiSeConnect" description="&lt;pre>WiSeConnect SDK&lt;/pre>">
+    <properties key="coreSdk.contributingSdk" value="com.silabs.sdk.stack.sisdk:2025.12.2._694545511563987570"/>
+    <properties key="core.installationPath" value="file:///home/ty/.silabs/slt/installs/conan/p/wisecd4a93bcc8f553/p/wiseconnect.slsdk"/>
+    <properties key="slt.sltInstalled" value="true"/>
+    <properties key="core.version" value="4.0.1._-1171297601"/>
+    <properties key="sdk.subPropertyFiles" value=""/>
+    <properties key="sdk.extensionPropertyFiles" value=""/>
+    <properties key="core.partCompatibility" value=".*si917.* .*siwg917m111mgtba.* .*siwg917m111xgtba.* .*siwg917m141xgtba.* .*siwg917m100xntba.* .*siwg917y111mgab.* .*siwg917y111mgnba.* .*siwg917y111mgnxa.* .*siwg917y110lgnba.* .*siwg917y110lgnxa.* .*siwg917y121mgnba.* .*siwg917y121mgnxa.* .*siwg917y111mgaba.* .*siwg917y111mgaxa.* .*siwg917y110lgaba.* .*siwg917y110lgaxa.* .*siwg917y121mgaba.* .*siwg917y121mgaxa.* .*siwg917y121mgnb.* .*siwg917m121xgtba.* .*siwg917m100mgtba.* .*siwg917m110lgtba.*"/>
+    <properties key="sdk.subLabel" value="Wi-Fi\ SDK\ 4.0.1-alpha.71"/>
+    <properties key="core.boardCompatibility" value=".*"/>
+    <properties key="sdk.templatesFile" value="/home/ty/.silabs/slt/installs/conan/p/wisecd4a93bcc8f553/p/bluetooth_le_siwx91x_app_templates.xml /home/ty/.silabs/slt/installs/conan/p/wisecd4a93bcc8f553/p/platform_siwx91x_app_templates.xml /home/ty/.silabs/slt/installs/conan/p/wisecd4a93bcc8f553/p/platform_nwp_siwx91x_app_templates.xml /home/ty/.silabs/slt/installs/conan/p/wisecd4a93bcc8f553/p/multi_protocol_siwx91x_app_templates.xml /home/ty/.silabs/slt/installs/conan/p/wisecd4a93bcc8f553/p/wifi_app_templates.xml"/>
+    <properties key="protocol.connectivityFirmwareFolders" value="file:/home/ty/.silabs/slt/installs/conan/p/wisecd4a93bcc8f553/p/connectivity_firmware/"/>
+    <properties key="sdk.docsFile" value="/home/ty/.silabs/slt/installs/conan/p/wisecd4a93bcc8f553/p/wiseconnect_docs.xml"/>
+    <properties key="sdk.demosFile" value="/home/ty/.silabs/slt/installs/conan/p/wisecd4a93bcc8f553/p/platform_nwp_siwx91x_app_demos.xml /home/ty/.silabs/slt/installs/conan/p/wisecd4a93bcc8f553/p/wifi_app_demos.xml /home/ty/.silabs/slt/installs/conan/p/wisecd4a93bcc8f553/p/multi_protocol_siwx91x_app_demos.xml"/>
+    <properties key="core.builtin" value="true"/>
+    <properties key="core.hidden" value="false"/>
+    <properties key="signature_trust.requiresTrust" value="false"/>
+    <properties key="core.detected" value="true"/>
+    <properties key="registry.providingDetector" value="com.silabs.ss.platform.internal.api.sdk.core.protocol.SDKProtocolDetector"/>
+    <properties key="CACHED_ID_STRING" value="uc.extension.wiseconnect3_sdk"/>
+  </descriptors>
+</model:MDescriptors>

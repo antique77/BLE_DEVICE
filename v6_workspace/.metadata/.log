@@ -1,0 +1,204 @@
+!SESSION 2026-04-09 17:54:59.531 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=zh_CN
+Framework arguments:  --uiPingBackPort=10012 --autoShutdown
+Command-line arguments:  -os linux -ws gtk -arch x86_64 --uiPingBackPort=10012 --autoShutdown
+
+!ENTRY org.eclipse.core.jobs 4 0 2026-04-13 11:12:53.206
+!MESSAGE SLC Generation Group bt_soc_empty
+!SUBENTRY 1 org.eclipse.core.jobs 4 2 2026-04-13 11:12:53.206
+!MESSAGE An internal error occurred during: "Generating apack_btConfig for bt_soc_empty".
+!STACK 0
+com.silabs.ss.framework.uc.core.api.exception.UcException: 
+Traceback (most recent call last):
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 130, in parse_string
+    rg = self.parse_gattdb(gattl[0])
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 187, in parse_gattdb
+    services.append(self.parse_service(snode,db.capabilities))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 223, in parse_service
+    s.chars.append(self.parse_characteristic(c,s.capabilities))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 228, in parse_characteristic
+    self.__parse_attrobj(xml, c)
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 496, in __parse_attrobj
+    attr.uuid = BluetoothUuid(xml.get('uuid', "00"))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gatt.py", line 111, in __init__
+    self.bytes = bytearray.fromhex(hexstr)
+ValueError: non-hexadecimal number found in fromhex() arg at position 3
+
+
+	at com.silabs.ss.framework.uc.core.internal.setup.acts.apack.AdapterPackAc.runAcFunction(AdapterPackAc.java:414)
+	at com.silabs.ss.framework.uc.core.internal.setup.acts.apack.AdapterPackAc.generate(AdapterPackAc.java:221)
+	at com.silabs.ss.framework.uc.core.internal.setup.acts.apack.AdapterPackAc.generate(AdapterPackAc.java:1)
+	at com.silabs.ss.framework.uc.internal.generation.UcProjectGenerator.generateSetup(UcProjectGenerator.java:144)
+	at com.silabs.ss.framework.uc.internal.generation.UcThreadingGenerator$UcSetupGeneratorTask.run(UcThreadingGenerator.java:543)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.jobs 4 2 2026-04-13 11:12:53.206
+!MESSAGE An internal error occurred during: "bt_soc_empty project generation task".
+!STACK 0
+com.silabs.ss.framework.uc.core.api.exception.MultiException: Multi-Exceptions available:
+  
+Traceback (most recent call last):
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 130, in parse_string
+    rg = self.parse_gattdb(gattl[0])
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 187, in parse_gattdb
+    services.append(self.parse_service(snode,db.capabilities))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 223, in parse_service
+    s.chars.append(self.parse_characteristic(c,s.capabilities))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 228, in parse_characteristic
+    self.__parse_attrobj(xml, c)
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 496, in __parse_attrobj
+    attr.uuid = BluetoothUuid(xml.get('uuid', "00"))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gatt.py", line 111, in __init__
+    self.bytes = bytearray.fromhex(hexstr)
+ValueError: non-hexadecimal number found in fromhex() arg at position 3
+
+
+	at com.silabs.ss.framework.uc.core.api.exception.MultiExceptionContainer$Builder.throwIf(MultiExceptionContainer.java:106)
+	at com.silabs.ss.framework.uc.internal.generation.UcThreadingGenerator$UcProjectGenerationTask.run(UcThreadingGenerator.java:682)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: com.silabs.ss.framework.uc.core.api.exception.UcException: 
+Traceback (most recent call last):
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 130, in parse_string
+    rg = self.parse_gattdb(gattl[0])
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 187, in parse_gattdb
+    services.append(self.parse_service(snode,db.capabilities))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 223, in parse_service
+    s.chars.append(self.parse_characteristic(c,s.capabilities))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 228, in parse_characteristic
+    self.__parse_attrobj(xml, c)
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 496, in __parse_attrobj
+    attr.uuid = BluetoothUuid(xml.get('uuid', "00"))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gatt.py", line 111, in __init__
+    self.bytes = bytearray.fromhex(hexstr)
+ValueError: non-hexadecimal number found in fromhex() arg at position 3
+
+
+		at com.silabs.ss.framework.uc.core.internal.setup.acts.apack.AdapterPackAc.runAcFunction(AdapterPackAc.java:414)
+		at com.silabs.ss.framework.uc.core.internal.setup.acts.apack.AdapterPackAc.generate(AdapterPackAc.java:221)
+		at com.silabs.ss.framework.uc.core.internal.setup.acts.apack.AdapterPackAc.generate(AdapterPackAc.java:1)
+		at com.silabs.ss.framework.uc.internal.generation.UcProjectGenerator.generateSetup(UcProjectGenerator.java:144)
+		at com.silabs.ss.framework.uc.internal.generation.UcThreadingGenerator$UcSetupGeneratorTask.run(UcThreadingGenerator.java:543)
+		... 1 more
+
+!ENTRY org.eclipse.core.jobs 4 0 2026-04-13 11:12:53.503
+!MESSAGE SLC Generation Group bt_soc_empty
+!SUBENTRY 1 org.eclipse.core.jobs 4 2 2026-04-13 11:12:53.503
+!MESSAGE An internal error occurred during: "Generating apack_btConfig for bt_soc_empty".
+!STACK 0
+com.silabs.ss.framework.uc.core.api.exception.UcException: 
+Traceback (most recent call last):
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 130, in parse_string
+    rg = self.parse_gattdb(gattl[0])
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 187, in parse_gattdb
+    services.append(self.parse_service(snode,db.capabilities))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 223, in parse_service
+    s.chars.append(self.parse_characteristic(c,s.capabilities))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 228, in parse_characteristic
+    self.__parse_attrobj(xml, c)
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 496, in __parse_attrobj
+    attr.uuid = BluetoothUuid(xml.get('uuid', "00"))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gatt.py", line 111, in __init__
+    self.bytes = bytearray.fromhex(hexstr)
+ValueError: non-hexadecimal number found in fromhex() arg at position 3
+
+
+	at com.silabs.ss.framework.uc.core.internal.setup.acts.apack.AdapterPackAc.runAcFunction(AdapterPackAc.java:414)
+	at com.silabs.ss.framework.uc.core.internal.setup.acts.apack.AdapterPackAc.generate(AdapterPackAc.java:221)
+	at com.silabs.ss.framework.uc.core.internal.setup.acts.apack.AdapterPackAc.generate(AdapterPackAc.java:1)
+	at com.silabs.ss.framework.uc.internal.generation.UcProjectGenerator.generateSetup(UcProjectGenerator.java:144)
+	at com.silabs.ss.framework.uc.internal.generation.UcThreadingGenerator$UcSetupGeneratorTask.run(UcThreadingGenerator.java:543)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.jobs 4 2 2026-04-13 11:12:53.503
+!MESSAGE An internal error occurred during: "bt_soc_empty project generation task".
+!STACK 0
+com.silabs.ss.framework.uc.core.api.exception.MultiException: Multi-Exceptions available:
+  
+Traceback (most recent call last):
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 130, in parse_string
+    rg = self.parse_gattdb(gattl[0])
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 187, in parse_gattdb
+    services.append(self.parse_service(snode,db.capabilities))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 223, in parse_service
+    s.chars.append(self.parse_characteristic(c,s.capabilities))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 228, in parse_characteristic
+    self.__parse_attrobj(xml, c)
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 496, in __parse_attrobj
+    attr.uuid = BluetoothUuid(xml.get('uuid', "00"))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gatt.py", line 111, in __init__
+    self.bytes = bytearray.fromhex(hexstr)
+ValueError: non-hexadecimal number found in fromhex() arg at position 3
+
+
+	at com.silabs.ss.framework.uc.core.api.exception.MultiExceptionContainer$Builder.throwIf(MultiExceptionContainer.java:106)
+	at com.silabs.ss.framework.uc.internal.generation.UcThreadingGenerator$UcProjectGenerationTask.run(UcThreadingGenerator.java:682)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	Suppressed: com.silabs.ss.framework.uc.core.api.exception.UcException: 
+Traceback (most recent call last):
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 130, in parse_string
+    rg = self.parse_gattdb(gattl[0])
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 187, in parse_gattdb
+    services.append(self.parse_service(snode,db.capabilities))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 223, in parse_service
+    s.chars.append(self.parse_characteristic(c,s.capabilities))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 228, in parse_characteristic
+    self.__parse_attrobj(xml, c)
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gattxml.py", line 496, in __parse_attrobj
+    attr.uuid = BluetoothUuid(xml.get('uuid', "00"))
+  File "/home/ty/.silabs/slt/installs/conan/p/simpl965e19baece23/p/bluetooth_bgbuild/gatt.py", line 111, in __init__
+    self.bytes = bytearray.fromhex(hexstr)
+ValueError: non-hexadecimal number found in fromhex() arg at position 3
+
+
+		at com.silabs.ss.framework.uc.core.internal.setup.acts.apack.AdapterPackAc.runAcFunction(AdapterPackAc.java:414)
+		at com.silabs.ss.framework.uc.core.internal.setup.acts.apack.AdapterPackAc.generate(AdapterPackAc.java:221)
+		at com.silabs.ss.framework.uc.core.internal.setup.acts.apack.AdapterPackAc.generate(AdapterPackAc.java:1)
+		at com.silabs.ss.framework.uc.internal.generation.UcProjectGenerator.generateSetup(UcProjectGenerator.java:144)
+		at com.silabs.ss.framework.uc.internal.generation.UcThreadingGenerator$UcSetupGeneratorTask.run(UcThreadingGenerator.java:543)
+		... 1 more
+
+!ENTRY com.silabs.ss.platform.content.core 2 0 2026-04-16 15:35:57.617
+!MESSAGE Unable to download asset://aem/www.silabs.com/content/dam/siliconlabs/images/products/simplicity-boards/brd4183a-unmounted.png
+!STACK 0
+java.lang.Exception: Failed to download https://updates.silabs.com/studio/v5/assets//aem/www.silabs.com/content/dam/siliconlabs/images/products/simplicity-boards/brd4183a-unmounted.png.timestamp
+	at com.silabs.ss.platform.internal.api.content.core.asset.AssetService.downloadAsset(AssetService.java:799)
+	at com.silabs.ss.platform.internal.api.content.core.asset.AssetService.resolveAsset(AssetService.java:496)
+	at com.silabs.ss.platform.internal.api.content.core.asset.AssetService$2.run(AssetService.java:422)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2026-04-16 17:22:39.253 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=zh_CN
+Framework arguments:  --uiPingBackPort=10012 --autoShutdown
+Command-line arguments:  -os linux -ws gtk -arch x86_64 --uiPingBackPort=10012 --autoShutdown
+
+!ENTRY com.silabs.ss.platform.content.core 2 0 2026-04-16 17:23:17.396
+!MESSAGE Unable to download asset://aem/aem_docs.docs
+!STACK 0
+java.lang.Exception: No registered asset with URI asset://aem/aem_docs.docs
+	at com.silabs.ss.platform.internal.api.content.core.asset.AssetService.getAsset(AssetService.java:283)
+	at com.silabs.ss.platform.internal.api.content.core.asset.AssetService.resolveAsset(AssetService.java:458)
+	at com.silabs.ss.platform.internal.api.content.core.asset.AssetService$2.run(AssetService.java:422)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2026-04-21 16:48:55.834 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=zh_CN
+Framework arguments:  --uiPingBackPort=10012 --autoShutdown
+Command-line arguments:  -os linux -ws gtk -arch x86_64 --uiPingBackPort=10012 --autoShutdown
+
+!ENTRY org.eclipse.core.jobs 4 2 2026-04-23 10:08:51.660
+!MESSAGE An internal error occurred during: "Parsing Pintool Data...".
+!STACK 0
+java.lang.UnsupportedOperationException
+	at java.base/java.util.AbstractList.add(Unknown Source)
+	at java.base/java.util.AbstractList.add(Unknown Source)
+	at com.silabs.ss.framework.hwconfig.api.core.model.device.impl.ABDeviceImpl.addDisposeListener(ABDeviceImpl.java:1051)
+	at com.silabs.ss.tool.uc.editor.editors.UcEditorController.internalDeviceSetter(UcEditorController.java:581)
+	at com.silabs.ss.tool.uc.editor.editors.UcEditorController$5.lambda$0(UcEditorController.java:563)
+	at java.base/java.util.Optional.ifPresent(Unknown Source)
+	at com.silabs.ss.tool.uc.editor.editors.UcEditorController$5.run(UcEditorController.java:563)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

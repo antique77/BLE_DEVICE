@@ -1,0 +1,11 @@
+{
+    "folders": [
+        {
+            "path": "../BLE_MCU/BLE_MCU"
+        },
+        {
+            "path": "../BLE_MCU/bootloader-uart-xmodem"
+        }
+    ],
+    "siWorkspaceRoot": "/home/ty/SimplicityStudio/BLE_MCU"
+}

@@ -1,0 +1,37 @@
+# ============================================================
+#  efr32_i2c Kconfig - 内核编译菜单配置
+#
+#  使用方法 (如果集成到内核源码树):
+#    1. 将此文件复制到 drivers/misc/Kconfig.efr32
+#    2. 在 drivers/misc/Kconfig 末尾追加:
+#       source "drivers/misc/Kconfig.efr32"
+#    3. make menuconfig → Device Drivers → Misc devices
+# ============================================================
+
+config EFR32_I2C
+	tristate "Silicon Labs EFR32 BG22 I2C client driver"
+	depends on I2C
+	help
+	  This is a Linux kernel I2C client driver for communicating
+	  with Silicon Labs EFR32 BG22 devices over the I2C bus.
+
+	  The driver operates as an I2C master on MTK SoC platforms,
+	  communicating with EFR32 BG22 configured as an I2C slave.
+
+	  Features:
+	    - Sysfs interface: /sys/bus/i2c/devices/X-0053/{device_id,
+	      version, echo, counter, stats, dump_all}
+	    - Misc device: /dev/efr32_i2c with ioctl support
+	    - Automatic device probe and ID verification
+	    - Thread-safe concurrent access via mutex
+
+	  Register map (4 registers):
+	    0x00: DEVICE_ID   (R)  Fixed value 0xE3
+	    0x01: VERSION     (R)  Firmware version Vx.y
+	    0x02: ECHO        (R/W) Echo test register
+	    0x03: COUNTER     (R)  Communication counter
+
+	  If unsure, say N.
+
+	  To compile as a module, choose M here.
+	  The module will be called efr32_i2c.

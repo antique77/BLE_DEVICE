@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-base-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "base",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "bootloader-uart-xmodem",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "bootloader-uart-xmodem::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bootloader-uart-xmodem-base-c50245735ace287e6534.json",
+					"name" : "bootloader-uart-xmodem",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "slc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-slc-base-afc0595cfa1321e0584b.json",
+					"name" : "slc",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ty/SimplicityStudio/BLE_MCU/bootloader-uart-xmodem/cmake_gcc/build",
+		"source" : "/home/ty/SimplicityStudio/BLE_MCU/bootloader-uart-xmodem/cmake_gcc"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
