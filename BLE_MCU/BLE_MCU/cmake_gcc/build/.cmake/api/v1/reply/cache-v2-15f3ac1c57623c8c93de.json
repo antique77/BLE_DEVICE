@@ -227,7 +227,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "30"
+			"value" : "25"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -251,7 +251,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ty/.silabs/slt/installs/conan/p/cmake1c02712053792/p/bin/cmake"
+			"value" : "/usr/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CONFIGURATION_TYPES",
@@ -275,7 +275,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ty/.silabs/slt/installs/conan/p/cmake1c02712053792/p/bin/cpack"
+			"value" : "/usr/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -287,7 +287,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ty/.silabs/slt/installs/conan/p/cmake1c02712053792/p/bin/ctest"
+			"value" : "/usr/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -1071,7 +1071,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ty/.silabs/slt/installs/conan/p/cmake1c02712053792/p/share/cmake-3.30"
+			"value" : "/usr/share/cmake-3.25"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",

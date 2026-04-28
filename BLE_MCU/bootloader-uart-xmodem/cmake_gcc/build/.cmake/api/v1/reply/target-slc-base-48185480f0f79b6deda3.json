@@ -423,9 +423,6 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-std=c17"
-				},
-				{
 					"backtrace" : 4,
 					"fragment" : "-mcpu=cortex-m33"
 				},
@@ -488,6 +485,9 @@
 				{
 					"backtrace" : 4,
 					"fragment" : "-fno-lto"
+				},
+				{
+					"fragment" : "-std=c17"
 				}
 			],
 			"defines" : 
